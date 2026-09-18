@@ -1,9 +1,0 @@
----
-layout: default
----
-<article class="article">
-<a class="back-link" href="{{ '/stories/' | relative_url }}">← Photography &amp; stories</a>
-<header class="article-heading"><p class="eyebrow">{% if page.example %}Example story · replace with your own{% else %}{{ page.date | date: '%B %-d, %Y' }}{% endif %}</p><h1>{{ page.title | escape }}</h1>{% if page.summary %}<p class="lead">{{ page.summary | escape }}</p>{% endif %}</header>
-{% if page.cover and page.cover != '' %}<figure><img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | escape }}">{% if page.cover_caption %}<figcaption>{{ page.cover_caption | escape }}</figcaption>{% endif %}</figure>{% endif %}
-<div class="prose">{{ content }}</div>
-</article>

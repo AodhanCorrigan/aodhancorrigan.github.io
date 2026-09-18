@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<section class="intro">
+  <div class="intro-main">
+    <p class="eyebrow">University of Waterloo / IQC</p>
+    <h1>Aodhan<br>Corrigan<span class="mark">.</span></h1>
+    <div class="bio">{% capture bio %}{% include bio.md %}{% endcapture %}{{ bio | markdownify }}</div>
+  </div>
+  <aside class="affiliation"><span class="small-label">Affiliation</span><p>University of Waterloo<br>Institute for Quantum Computing</p></aside>
+</section>
+<a class="feature research-feature" href="{{ '/research/' | relative_url }}">
+  <span class="feature-number">01 / RESEARCH</span>
+  <div><h2>Research projects</h2><p>Projects, publications, and the ideas behind them.</p><span class="feature-link">Explore research <span aria-hidden="true">↗</span></span></div>
+</a>
+<a class="feature story-feature" href="{{ '/stories/' | relative_url }}">
+  <span class="feature-number">02 / BEYOND RESEARCH</span>
+  <div><h2>Photography<br>&amp; stories</h2><p>Photographs, observations, and occasional writing.</p><span class="feature-link">View photography &amp; stories <span aria-hidden="true">↗</span></span></div>
+</a>
+<a class="feature story-feature" href="{{ '/hobbies/' | relative_url }}">
+  <span class="feature-number">03 / HOBBIES</span>
+  <div><h2>Hobbies</h2><p>Interests and projects outside research.</p><span class="feature-link">Explore hobbies <span aria-hidden="true">↗</span></span></div>
+</a>
+<a class="feature story-feature" href="{{ '/cv/' | relative_url }}">
+  <span class="feature-number">04 / CV</span>
+  <div><h2>Curriculum vitae</h2><p>Education, research experience, and publications.</p><span class="feature-link">View CV <span aria-hidden="true">↗</span></span></div>
+</a>

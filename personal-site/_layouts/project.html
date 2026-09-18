@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article class="article">
+<a class="back-link" href="{{ '/research/' | relative_url }}">← Research projects</a>
+<header class="article-heading">{% if page.example %}<p class="badge">Example project · replace with your research</p>{% endif %}<h1>{{ page.title | escape }}</h1><p class="lead">{{ page.summary | escape }}</p></header>
+{% if page.publication and page.publication != '' %}<aside class="publication"><span class="small-label">Publication</span><p>{{ page.publication | escape }}</p>{% if page.paper_url and page.paper_url != '' %}<a href="{{ page.paper_url | escape }}">Read publication ↗</a>{% endif %}</aside>{% endif %}
+{% if page.image and page.image != '' %}<figure><img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">{% if page.caption %}<figcaption>{{ page.caption | escape }}</figcaption>{% endif %}</figure>{% elsif page.example %}<div class="figure-space"><span>Research figure or photograph</span><small>Optional — add an image when you’re ready</small></div>{% endif %}
+<div class="prose">{{ content }}</div>
+</article>

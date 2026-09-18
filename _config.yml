@@ -1,3 +1,27 @@
-theme: jekyll-theme-minimal
 title: Aodhan Corrigan
-description: Testing
+url: "https://aodhancorrigan.github.io"
+baseurl: ""
+description: "Research, photography and stories by Aodhan Corrigan."
+markdown: kramdown
+permalink: /stories/:title/
+timezone: America/Toronto
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: story
+exclude: [README.md, Gemfile, Gemfile.lock, HOW-TO-EDIT.md, vendor]
